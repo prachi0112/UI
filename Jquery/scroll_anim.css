@@ -1,0 +1,87 @@
+body {
+    overflow-x: hidden;
+}
+#container {
+    opacity: 0;
+    transition: 1s;
+}
+header {
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 10;
+    transform: translateY(-100%);
+}
+header.fix {
+    position: fixed;
+    background-color: red;
+    top: 0px !important;
+}
+#banner {
+    opacity: 0;
+    transition: 2s;
+}
+img {
+    width: 100%;
+    transition: 1s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-1 img {
+    transform: translateX(-200%);
+}
+.col-2 img {
+    transform: translateX(200%);
+}
+
+.row.translate img {
+    transform: translateX(0%);
+}
+
+/*
+Use the following methods for scroll bar customization
+::-webkit-scrollbar-button
+::-webkit-scrollbar-corner
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-track
+::-webkit-scrollbar-track-piece
+*/
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+    z-index: 20;
+}
+
+.loader {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 150px);
+    height: 200px;
+    width: 200px;
+    border: 40px solid red;
+    border-radius: 50%;
+    border-color: red transparent blue;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
