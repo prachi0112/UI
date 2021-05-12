@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Forms in HTML5</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Your Name" required value="Ram" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Your Name" required autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Password" required value="12345" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" placeholder="Email ID" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Choose Country</td>
+                <td>
+                    <input list="country">
+                    <datalist id="country">
+                        <option>India</option>
+                        <option value="ch">China</option>
+                        <option value="Den">Denmark</option>
+                        <option value="USA">USA</option>
+                        <option value="Rus">Russia</option>
+                        <option value="Jp">Japan</option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL" title="Please enter a valid URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Card No."
+                    pattern="[0-9]{4}[a-z|A-Z]{4}[@|#|$|!|&|*]{1}" 
+                    title="Enter 4 digits then 4 alphabets and 1 special character">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="80" max="100"></progress>
+                    <output>80%</output>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="100" max="1000" min="100"
+                    onchange="op.value = value" step="100">
+                    <output id="op">100</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Phone Number</td>
+                <td>
+                    <input type="tel" placeholder="Phone Number" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Search Here</td>
+                <td>
+                    <input type="search" placeholder="Type here to search">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your message</td>
+                <td>
+                    <textarea cols="30" rows="10" spellcheck="True" placeholder="Your message here"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
