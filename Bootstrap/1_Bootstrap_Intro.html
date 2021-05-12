@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --custom-color: rgb(244, 46, 78);
+            --text-right: right;
+        }
+        h1 {
+            font-family: var(--font-family-monospace);
+            /*color: var(--primary); */  /*This is the 'primary' color as defined by the bootstraap */
+            color: var(--custom-color);
+        }
+        p {
+            text-align: var(--text-right);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">   <!-- This container has different width at different screen size-->
+        <h1 class="text-center mb-5">Bootstrap Demo</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cum aperiam. Eligendi, omnis fugiat quia consectetur quos nostrum quis alias repellendus at necessitatibus perferendis voluptates, consequatur quo nemo voluptatibus molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere repellendus, dolores in, dicta iure assumenda labore dolorem ad suscipit maxime ipsum expedita deserunt. Similique nulla minima maxime numquam nesciunt aperiam!
+        </p>
+    </div>
+
+    <div class="container-fluid">   <!-- This container has width 100% -->
+        <button class="btn btn-primary w-25">Click Here</button>
+        <button class="btn btn-secondary">Click Here</button>
+        <button class="btn btn-danger">Click Here</button>
+        <button class="btn btn-success">Click Here</button>
+        <button class="btn btn-warning d-block mt-3 mb-4 ml-2">Click Here</button>
+        <button class="btn btn-info w-25">Click Here</button>
+        <img class="w-100 mt-5" src="../images/WebImages/avengers-thor.jpg" alt="">
+    </div>
+
+</body>
+</html>
