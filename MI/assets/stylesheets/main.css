@@ -1,0 +1,357 @@
+/* Global CSS */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#container {
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Generic CSS */
+
+#top-bar {
+    background-color: black;
+}
+#top-bar ul li {
+    display: inline-block;
+    border-right: 1px solid gray;
+    margin: 10px 0px;
+}
+#top-bar ul li:last-child {
+    border-right: none;
+}
+#top-bar ul li a {
+    color: lightgray;
+    font-size: 11px;
+    padding: 0px 15px;
+}
+#top-bar ul {
+    display: inline-block;
+}
+#top-bar .top-bar-left {
+    margin-left: 9%;
+}
+#top-bar .top-bar-right {
+    margin-left: 45.5%;
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 5.5%;
+    z-index: 2;
+}
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px auto;
+}
+#header .icon {
+    width: 56px;
+    overflow: hidden;
+    transition: 0.1s;
+}
+#header .icon img {
+    transform: translateX(-50%);
+}
+#header .icon:hover img {
+    transform: translateX(0%);
+}
+
+#header .nav-bar{
+    width: 59%;
+}
+#header .nav-bar ul {
+    display: flex;
+    margin-top: 20px;
+}
+#header .nav-bar ul li a {
+    padding: 20px 25px;
+}
+#header ul li a {
+    color: #616161;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#header .dropdown {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    border-top: 1px solid lightgray;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition-duration: 0.2s;
+    z-index: 5;
+}
+#header .dropdown ul {
+    margin-left: 10%;
+}
+#header .dropdown ul li {
+    margin: 2%;
+}
+#header .dropdown ul li a div {
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+}
+#header .nav-bar ul li:hover .dropdown {
+    transform: scale(1, 1);
+}
+
+#banner {
+    width: 200%;
+    height: 570px;
+}
+#banner .slide {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    animation: carousel 5s linear infinite alternate;
+    margin: 0px -2px;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes carousel {
+    0%, 45% {
+        transform: translateX(0%);
+    }
+    50%, 100% {
+        transform: translateX(-100%);
+    }
+}
+#banner .slide img {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    height: 100%;
+    transform: scale(1.3, 1.3);
+}
+#banner .slide-desc {
+    position: absolute;
+    top: 19%;
+    left: 15%;
+}
+#banner .slide-desc h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#banner .slide-desc-2 h2 {
+    font-size: 35px;
+}
+#banner .slide-desc p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+#banner .slide-desc input {
+    background-color: transparent;
+    padding: 10px 62px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+#banner .slide-desc input:hover {
+    background-color: black;
+    color: white;
+}
+
+#content {
+    background-color: #F5F5F5;
+    width: fit-content;
+    margin: 15px auto;
+}
+#content .feat-row {
+    display: flex;
+    justify-content: space-between;
+}
+#content .feat-col:hover {
+    box-shadow: 0px 0px 5px 2px lightgray;
+}
+#content .heading h2 {
+    position: relative;
+    height: 80px;
+    text-align: center;
+}
+#content .heading h2 span {
+    position: relative;
+    top: 30%;
+    font-size: 30px;
+    color: gray;
+    background-color: #F5F5F5;
+    padding: 0px 30px;
+}
+#content .heading h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid lightgray;
+    z-index: 0;
+}
+
+#content .star-row {
+    display: flex;
+    justify-content: space-between;
+}
+#content .star-col-2-row-1 {
+    display: flex;
+    margin: 0px 2px;
+    justify-content: space-between;
+}
+#content .star-col-2-row-2 {
+    display: flex;
+    margin: 0px 2px;
+    justify-content: space-around;
+}
+
+#content .video-row {
+    display: flex;
+    justify-content: space-between;
+}
+#content .video-col {
+    position: relative;
+}
+#content .play {
+    background-color: rgba(255,255,255,0.1);
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    z-index: 1;
+    border-radius: 50%;
+}
+.play::after {
+    content: "";
+    position: absolute;
+    left: 44%;
+    top: 38%;
+    border-width: 12.5px 0px 12.5px 15px;
+    border-style: solid;
+    /* border-color: red blue green orange; */
+    border-color: transparent transparent transparent white;
+}
+#content .video-col:hover .play{
+    background-color: rgba(255,255,255,0.5);
+}
+
+#content .social {
+    display: flex;
+    margin: 8% auto 4%;
+}
+#content .social-1 {
+    width: 21%;
+}
+.social-1 h3, .social-3 h3 {
+    margin: 0px;
+    font-weight: lighter;
+}
+.social-1 p, .social-3 p {
+    margin: 0px;
+    font-size: 12px;
+    color: gray;
+}
+#content .social-2 {
+    width: 39%;
+}
+.social-2 input {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+#content .social-3 {
+    width: 17%;
+}
+#content .social-4 {
+    width: 15%;
+}
+#content .social-4 ul {
+    display: flex;
+    padding-top: 10px;
+}
+#content .social-4 ul li {
+    padding-right: 40px;
+    color: gray;
+}
+#footer {
+    background-color: #212121;
+}
+#footer .foot-top {
+    position: relative;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin-left: 10%;
+    padding: 50px 0px 60px;
+}
+#footer .foot-left {
+    display: flex;
+}
+#footer .foot-left ul li {
+    padding-top: 14px;
+    padding-right: 50px;
+}
+#footer .foot-left ul li a {
+    color: lightgray;
+    font-size: 13px;
+}
+#footer .foot-left ul li:first-child a {
+    font-size: 15px;
+}
+#footer .foot-left h6 {
+    font-size: 16px;
+    color: lightgrey;
+    margin: 0px;
+    font-weight: normal;
+}
+#footer .foot-right {
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    left: 80%;
+}
+#footer .foot-right ul li {
+    color: lightgray;
+    font-size: 20px;
+    padding: 2px;
+}
+#footer .foot-right ul li:nth-last-child(2) {
+    font-size: 10px;
+    padding-top: 3px;
+}
+#footer .foot-right ul li input {
+    background-color: #212121;
+    color: lightgray;
+    border: 1px solid gray;
+    font-size: 14px;
+    padding: 8px 10px;
+    margin-top: 15px;
+}
+#footer .copy {
+    margin: 2% 10% 0%;
+    color: lightgray;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
