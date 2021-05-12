@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../../Jquery/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        #pwd_bar {
+            display: inline-block;
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Form Handling</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter your name</td>
+                <td>
+                    <input type="text" placeholder="Name" autocomplete="off" autofocus>
+                </td>
+                <td>
+                    <span class="emptySpan"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td id="email_blur">
+                    <input type="email" placeholder="Email" autocomplete="off" required>
+                </td>
+                <td>
+                    <span class="emptySpan" id="validateEmail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td id="pwd_keyup">
+                    <input type="password" placeholder="Password" id="password" required>
+                </td>
+                <td>
+                    <span class="emptySpan" id="pwd_span"></span>
+                    <span id="pwd_bar"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td id="border_color">
+                    <input type="password" placeholder="Confirm Password" onkeyup="conf_pwd(this)" id="confirm_password" required>
+                </td>
+                <td>
+                    <span class="emptySpan" id="conf_pwd_span"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Reset</button>
+                </td>
+                <td>
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
