@@ -1,0 +1,17 @@
+/* h3 - selector
+{} - expression
+color - property
+red - value */
+
+h3 {
+    color: green;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+
+p {
+    color: blueviolet;
+    font: outline;
+    font-size: xx-large;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* > used to implement CSS on immediate level of children */
+        #parent_1 > h2 {
+            color: brown;
+        }
+
+    /* + used to implement CSS on immediate sibling of parent_1, if the immediate sibling is a div, hr or any tag then the CSS will be implemented to that tag and not on any tag after that */
+        #parent_1 + h2 {
+            color: chartreuse;
+        }
+
+    /* ~ used to implement CSS on all the siblings of parent_1 */
+        #parent_1 ~ h2 {
+            color: cadetblue;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Combinators</h1>
+
+    <div id="parent_1">
+        <h2>This heading is inside parent_1</h2>
+        <h2>This heading is inside parent_1</h2>
+        <h2>This heading is inside parent_1</h2>
+        <h2>This heading is inside parent_1</h2>
+        <div class="child_1">
+            <h2>This heading is inside child_1 element of parent_1</h2>
+        </div>
+        <h2>This heading is inside parent_1</h2>
+        <h2>This heading is inside parent_1</h2>
+        <div class="child_2">
+            <h2>This heading is inside child_2 element of parent_1</h2>
+        </div>
+        <h2>This heading is inside parent_1</h2>
+    </div>
+
+    <!-- <hr>
+
+    <div id="parent_2">
+        <h2>This heading is inside parent_2</h2>
+        <div class="child_1">
+            <h2>This heading is inside child_1 element of parent_2</h2>
+        </div>
+        <div class="child_2">
+            <h2>This heading is inside child_2 element of parent_2</h2>
+        </div>
+    </div> -->
+    
+    <hr>
+
+    <h2>This heading is the sibling of parent_1</h2>
+    <h2>This heading is the sibling of parent_1</h2>
+    <h2>This heading is the sibling of parent_1</h2>
+    <h2>This heading is the sibling of parent_1</h2>
+
+</body>
+</html>

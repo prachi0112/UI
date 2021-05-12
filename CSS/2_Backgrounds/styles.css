@@ -1,0 +1,28 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/wp4419229.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 400px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://wallpaperaccess.com/full/1315984.jpg");
+}
+#div_2 {
+    background-image: url("https://i.pinimg.com/originals/55/47/c0/5547c0e51d240228f1f11387be02c5eb.jpg");
+}
+#div_3 {
+    background-image: url("https://media1.santabanta.com/full1/Cricket/Virat%20Kohli/virat-kohli-38a.jpg");
+}
+#div_4 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5vkCAWut-O8YxaBw7ewGfVujBkNimD0m5qFXu06n2pleFX4eg&usqp=CAU");
+}
+#div_5 {
+    background-image: url("https://cdn.wallpapersafari.com/30/46/RvFVwS.jpg");
+}

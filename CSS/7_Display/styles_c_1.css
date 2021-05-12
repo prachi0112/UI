@@ -1,0 +1,102 @@
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.container {
+    width: 990px;
+    margin: 0px auto;
+}
+#header {
+    background-color: #009270;
+    width: 64%;
+    margin: 0px auto;
+}
+#header .logo {
+    width: 13%;
+    margin-top: 8px;
+    /* margin-bottom: 8px; */
+    margin-left: 18px;
+}
+#header .cric {
+    width: 80%;
+}
+#header .menu {
+    width: 72%;
+    position: relative;
+}
+#header .menu .caret {
+    font-size: 13px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+ul li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+ul li a {
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+    color: white;
+    padding: 16px 6px;
+}
+#header .search {
+    position: absolute;
+    right: 255px;
+    top: 15px;
+}
+::placeholder {
+    color: white;
+}
+#header input[type='text'] {
+    width: 65%;
+    padding: 10px 0px 8px 33px;
+    background-color: #00785C;
+    border: none;
+}
+#header .search .button {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    color: white;
+}
+
+.dropdown {
+    position: absolute;
+    border: 1px solid red;
+    /* display: none; */
+}
+.dropdown ul li a {
+    display: block;
+    width: 100%;
+}
+.dropdown ul li a {
+    color: black;
+    background-color: rgb(250, 250, 250);
+    width: auto;
+}
+ul li a:hover {
+    color: black;
+    background-color: #00785C;
+}
+/* ul li:hover .dropdown {
+    background-color: rgb(236, 235, 235);
+    display: block;
+} */
+.dropdown ul li:hover {
+    background-color: rgb(236, 235, 235);
+    display: block;
+}

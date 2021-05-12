@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            /*text-decoration: underline;
+            text-decoration: overline;
+            text-decoration: line-through;
+            text-transform: capitalize;*/
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: xx-large;
+            letter-spacing: 3px;
+        }
+        p {
+            font-size: 20px;
+            /*line height is generally font-size + 4px. This is to avoid the overlaping of lines (4px is standard)*/
+            line-height: 34px;
+            /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+            /*font-weight will only work if the given value of font-weight exist in the applied font-family*/
+            /*font-weight: 800;*/
+
+            /*Roboto font have all the font-weights*/
+            font-family: 'Roboto Slab', serif;
+            /*font-weight: 100;
+            font-weight: 400;
+            font-weight: lighter;
+            font-weight: 700;
+            font-weight: bold;*/
+            font-weight: 500;
+
+            font-style: italic;
+            font-style: oblique;
+            word-spacing: 10px;
+            letter-spacing: 4px;
+
+            /*text-align = justify  it adjust the spaces between words and fit the words in the line to full width*/
+            text-align: justify;
+        }
+        p::first-line {
+            color: white;
+            font-size: x-large;
+            background-color: hotpink;
+        }
+        span {
+            background-color: grey;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <h1>Text Properties</h1>
+
+    <h2>This is heading</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur magni repellendus et, doloremque obcaecati vitae rem temporibus corrupti veniam quo dolor sed voluptatum a, iure nobis quidem architecto libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error quia sint labore! Accusamus quibusdam odit ut possimus perspiciatis voluptatum alias aliquid explicabo delectus aperiam, voluptatem provident reprehenderit deleniti modi.
+
+        <!-- <mark> tag is not recommended and <span> tag should be used instead -->
+        <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore, deleniti deserunt ipsam, odit, molestiae numquam consequatur.</mark>
+
+        <br>
+
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto iusto deserunt natus, autem.</span>
+
+    </p>
+
+</body>
+</html>

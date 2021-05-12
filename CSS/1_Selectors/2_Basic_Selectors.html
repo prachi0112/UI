@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        h2 {
+            color: green;
+        }
+    </style> -->
+
+    <style>
+        #parent_1 h2 {
+            color: green;
+        }
+        #parent_2 h2 {
+            font-size: xx-large;
+        }
+        #parent_1 .child_1 h2 {
+            color: indigo;
+        }
+        .child_2 h2 {
+            color: palevioletred;
+        }
+        .child_2 h3, #parent_1 .child_3 h2 {
+            color: orange;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../external.css">
+
+</head>
+<body>
+    
+    <h1>Basic Selectors</h1>
+
+    <div id="parent_1">
+        <h2>This heading is inside parent_1</h2>
+        <div class="child_1">
+            <h2>This heading is inside child_1 element of parent_1</h2>
+        </div>
+        <div class="child_2">
+            <h2>This heading is inside child_2 element of parent_1</h2>
+        </div>
+        <div class="child_3">
+            <h2>This heading is inside child_3 element of parent_1</h2>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div id="parent_2">
+        <h2>This heading is inside parent_2</h2>
+        <div class="child_1">
+            <h2>This heading is inside child_1 element of parent_2</h2>
+        </div>
+        <div class="child_2">
+            <h2>This heading is inside child_2 element of parent_2</h2>
+
+            <h3>External CSS over-written by Selectors</h3>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus eos quam modi optio fuga aperiam illum eius reiciendis, rerum molestiae reprehenderit tenetur voluptas numquam! Autem unde sunt nam quia.
+            </p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

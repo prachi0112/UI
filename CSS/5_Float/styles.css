@@ -1,0 +1,68 @@
+/* Pseudo Elements - After, Before */
+
+#parent:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#parent {
+    border: 2px solid red;
+}
+.column_1 {
+    background-color:lightgrey;
+    width: 14%;
+    float: left;
+    /* padding: 2px; */
+    margin: 8px;
+    /* overflow: auto; */
+}
+.column_2 {
+    background-color: lightpink;
+    width: 14%;
+    margin-right: 8px;
+    margin-top: 8px;
+    /* float: left; */
+    float: right;
+    /* overflow: auto; */
+}
+.column_3 {
+    background-color: rosybrown;
+    width: 69.7%;
+    margin-top: 8px;
+    height: 360px;
+    float: left;
+}
+.column_4 {
+    background-color: lightblue;
+    float: left;
+    width: 40%;
+    margin: 8px;
+}
+/* .column_5 {
+    background-color: lightsalmon;
+    float: left;
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+} */
+.div_1 {
+    background-color:lightcyan;
+    width: 59%;
+    overflow: auto;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.div_2 {
+    background-color: thistle;
+    width: 39%;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 4px;
+    /* overflow: auto; */
+    /* zoom: 1; */
+}
