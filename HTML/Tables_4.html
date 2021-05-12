@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- To read about advanced table features like scope, colgroup, rowgroup :- 
+        https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced -->
+    
+    <table border="2" width=100% cellpadding=10>
+
+        <!-- The HTML <caption> element specifies the caption (or title) of a table. -->
+        <!-- The <caption> element should be the first child of its parent <table> element. -->
+
+        <!-- The scope attribute specifies whether a header cell is a header for a column, row, or group of columns or rows.
+        The scope attribute has no visual effect in ordinary web browsers, but can be used by screen readers. -->
+
+        <caption>He-Man and Skeletor facts</caption>
+        <tr>
+            <td> </td>
+            <th scope="col">He-Man</th>
+            <th scope="col">Skeletor</th>
+        </tr>
+        <tr>
+            <th scope="row">Role</th>
+            <td>Hero</td>
+            <td>Villain</td>
+        </tr>
+        <tr>
+            <th scope="row">Weapon</th>
+            <td>Power Sword</td>
+            <td>Havoc Staff</td>
+        </tr>
+        <tr>
+            <th scope="row">Dark secret</th>
+            <td>Expert florist</td>
+            <td>Cries at romcoms</td>
+        </tr>
+    </table>
+
+</body>
+</html>

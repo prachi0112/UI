@@ -1,0 +1,95 @@
+<!-- Emmet -->
+<!-- Press ! and Tab to get basic html code -->
+<!-- Doctype html in the first line of the below code tells the browser that you are using HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta - data about data -->
+    <!-- charset - character set -->
+    <meta charset="UTF-8">
+    <!-- viewport - any screen or device on which user view website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="best tutorial website, python, java, html, css">
+    <meta name="description" content="This website is for java">
+    <title>HTML_Tags</title>
+</head>
+<body>
+    <h1>Heading_1</h1>
+    <!-- h1*6 -->
+    <!-- h1{This is heading} -->
+    <!-- h1{This is heading_$}*6 -->
+    <!-- h${This is heading_$}*6 -->
+    <!-- Main heading of the page - h1 - there is only one main heading in a page so only one h1 tag -->
+    <h1>This is heading_1</h1>
+    <!-- Main heading of the sections - h2 - can be more than one -->
+    <h2>This is heading_2</h2>
+    <!-- Sub headings - h3, h4, h5, h6 -->
+    <h3>This is heading_3</h3>
+    <h4>This is heading_4</h4>
+    <h5>This is heading_5</h5>
+    <h6>This is heading_6</h6>
+
+    <!-- Base size of words in a website is 16px (pixel) ..headings have there own pre-defined size -->
+    <!-- Size of h1 = 2em , em is a unit of size which means 'emphasis' -->
+    <!-- 1em = base size = 16px (this is the default value) -->
+    <!-- Size of h1 = 2em = 32px -->
+    <!-- Size of h4 = 1em = 16px - the font whose size is 16px is generally not visible when you inspect the page-->
+    <!-- em unit helps in making the size of the headings responsive -->
+    <!-- % - it's another unit - generally used for height and width - not used for font size  -->
+    <!-- rem - root em - another unit - in CSS3 -->
+    <!-- 16px = 1em = 100% = 12pt -->
+    <!-- pxtoem.com - conversion between different units -->
+
+
+    <p>
+        <!-- Print Lorem ipsum in paragraph and not in a single long line - alt + Z -->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod reiciendis at consequuntur quaerat sit beatae harum cum inventore, enim explicabo? Modi, aspernatur numquam magnam quidem beatae architecto. Eius, cupiditate ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil porro corporis debitis tempore fuga, qui optio doloremque dignissimos laborum illo ipsam hic quod? Molestias iusto consequatur et doloribus tenetur repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum tempora numquam corporis mollitia eaque quae impedit aut autem totam rem odio deleniti, cum veniam voluptatum sunt, ullam, cupiditate eum iure.
+    </p>
+
+    <!-- a - Anchor -->
+    <!-- href - Hyper reference -->
+    <!-- target="_blank" - to open the link in new Tab -->
+    <a href="https://www.google.com" title="Visit Google" target="_blank">Click to go to GOOGLE</a>
+    <a href="#">This comes next to previous div and not in the next line</a>
+    <a href="#">This comes next to previous div and not in the next line</a>
+
+    <!-- There is no gap between anchor text and the text inside div - this shows 'a' tag and 'div' don't take any margin from the top and bottom -->
+
+    <div>
+        <a href="#">This link is inside a div</a>
+        <a href="#">This link is inside a div</a>
+        <a href="#">This link is inside a div</a>
+        <a href="#">This link is inside a div</a>
+    </div>
+
+    <!-- Block vs Inline Tags in HTML -->
+    <!-- 
+    An inline element does not cause a line break (start on a new line) and does not take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used within other HTML elements.
+    Examples of inline elements are:
+    anchor <a> tag
+    emphasis <em> tag
+    image <img> tag 
+    A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+    Examples of the block-level tag are:
+    Heading tags <h1> to <h6>
+    List (Ordered, Unordered, Description and List Item) tags <ol> , <ul> ,<dl> , <li>
+    Pre-formatted text tag <pre>
+    Blockquote tag <blockquote>
+    -->
+<br>
+    Block 
+        - occupy full screen width or area available to them
+        - eg :- h1, h2...h6, p, div, form, table, ul, li
+    <br>
+    Inline
+        - occupy area only according to the content
+        - eg:- a, span, b, i, em, u, small
+        - Height and width of an inline tag is - auto*auto
+    <br>
+    NOTE : Never put a block tag inside an inline tag except "a" tag (Sometimes we have to make the whole block clickable)
+
+    <!-- The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code. -->
+
+
+</body>
+</html>
