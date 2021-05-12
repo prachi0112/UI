@@ -1,0 +1,34 @@
+#cube {
+    height: 300px;
+    width: 300px;
+    margin: 10% auto;
+    transform-style: preserve-3d;
+    /* transition: 2s; */
+}
+#cube:hover .top {
+    transform: rotateX(0deg);
+}
+#cube:hover .front {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+#cube > div {
+    height: inherit;
+    width: inherit;
+    font-size: 50px;
+    position: absolute;
+    border: 2px solid red;
+}
+.front {
+    transition: 2s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.top {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    transition: 2s;
+    background-color: #fff;
+    color: #000;
+}

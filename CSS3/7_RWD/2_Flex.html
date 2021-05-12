@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="2_Flex.css">
+
+</head>
+<body>
+    
+    <h1>Flexbox</h1>
+
+    <div id="row">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste molestiae quod, aut deserunt adipisci ut cum eveniet amet reprehenderit ipsam quisquam, repudiandae voluptatum et odio perferendis velit accusamus ipsa.
+            </p>
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? 
+            </p>
+            <img src="../../images/WebImages/thor-chris-hemsworth.jpg" alt="">
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste molestiae quod, aut deserunt adipisci ut cum eveniet amet reprehenderit ipsam quisquam, repudiandae voluptatum et odio perferendis velit accusamus ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque repellat perspiciatis perferendis dicta odio quos, eius, nihil ipsa maiores aliquid neque optio quibusdam quasi consectetur! Ab illo veritatis dolore.
+            </p>
+        </div>
+    </div>
+
+    <ul>
+        <li>
+            <img src="../../images/dhoni.jpg" alt="">
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Flexbox -->
+    <!-- flex- basis, grow, shrink -->
+    <!-- align-content, align-self -->
+    <!-- flex-direction: column-reverse; -->
+    <!-- flex-flow: flex-direction flex-wrap; -->
+    
+
+    <!-- flex-direction :- [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items]
+    If your items were links or some other element that the user could tab to, then the tabbing order would be the order that these items appear in the document source — not your visual order.
+
+    If you are using a reverse value, or otherwise reordering your items, you should consider whether you actually need to change the logical order in the source. The specification continues with a warning not to use reordering to fix issues in your source:
+    “Authors must not use order or the *-reverse values of flex-flow/flex-direction as a substitute for correct source ordering, as that can ruin the accessibility of the document.” 
+
+    Changing the value of flex-direction does not change the order in which items are navigated to, changing this value does not change paint order. It is a visual reversal of the items only. -->
+
+
+    <!-- flex-order :- 
+    Flex items have a default order value of 0, therefore items with an integer value greater than 0 will be displayed after any items that have not been given an explicit order value.
+
+    You can also use negative values with order, which can be quite useful. If you want to make one item display first, and leave the order of all other items unchanged, you can give that item an order of -1. As this is lower than 0 the item will always be displayed first. -->
+
+    <!-- flex :- 
+    This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.
+
+    .item {
+        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+      } 
+    -->
+
+    <!-- flex vs inline-flex :- 
+    [https://codepen.io/clairecodes/pen/POjKXY]
+    -->
+
+
+</body>
+</html>

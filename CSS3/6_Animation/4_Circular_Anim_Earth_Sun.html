@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #earth {
+            background-image: url(earth.gif);
+            height: 100px;
+            width: 600px;
+            background-size: auto 100%;
+            position: absolute;
+            z-index: 1;
+            left: 30%;
+            top: 38%;
+            background-repeat: no-repeat;
+            /*border: 2px solid red;*/
+            animation: earth 10s linear infinite;
+        }
+        #sun {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            box-shadow: 0px 0px 20px 20px orange;
+            border-radius: 50%;
+            margin: 15% auto 0px;
+            position: relative;
+            /*border: 2px solid red;*/
+            animation: sun 10s linear infinite;
+        }
+
+        @keyframes earth {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes sun {
+            0% {
+                box-shadow: 0px 0px 0px 0px yellow;
+            }
+            50% {
+                box-shadow: 0px 0px 40px 40px orange;
+            }
+            100% {
+                box-shadow: 0px 0px 0px 0px yellow;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="earth"></div>
+    <div id="sun"></div>
+
+</body>
+</html>

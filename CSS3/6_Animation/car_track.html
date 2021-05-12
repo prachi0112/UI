@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #car_track {
+            width: 600px;
+            height: 600px;
+            margin: 40px auto;
+            border: 40px double black;
+            border-radius: 50%;
+            position: relative;
+        }
+        .track {
+            font-size: 70px;
+            text-align: center;
+            margin-top: 230px;
+        }
+        .car {
+            position: absolute;
+            top: -150px;
+            transform: rotateZ(-90deg);
+        }
+        .car img {
+            width: 60%;
+            animation: car 5s linear 0s infinite;
+        }
+        @keyframes car {
+            0% {
+                transform: rotateZ(0deg) translateY(400px);
+            }
+            100% {
+                transform: rotateZ(-360deg) translateY(400px);
+                transform-origin: center 600px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="car_track">
+        <div class="track">Loading...</div>
+        <div class="car"><img src="car.png" alt=""></div>
+    </div>
+
+</body>
+</html>

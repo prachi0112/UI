@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent {
+            column-count: 3;
+            column-rule: 2px solid red;
+            column-gap: 50px;
+            /*text-align: justify;*/
+        }
+        p {
+            /*column-count: 3;*/
+            margin: 0px;
+        }
+        .row {
+            column-count: 3;
+            margin-top: 30px;
+        }
+        .col {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        h2 {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Column Count</h1>
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium provident exercitationem, voluptates fuga, molestias amet labore reiciendis tempore quidem harum minus nisi alias rerum eos nesciunt ullam! Harum, molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit odit? Dignissimos quaerat qui culpa architecto impedit porro, dolores molestias provident sed, eos debitis nobis molestiae totam sapiente exercitationem officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae fuga asperiores doloremque ipsam itaque eos perferendis, vitae assumenda non nostrum numquam autem nisi enim dicta repellat adipisci est tempore!
+        </p>
+    </div>
+    <div class="row">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste molestiae quod, aut deserunt adipisci ut cum eveniet amet reprehenderit ipsam quisquam, repudiandae voluptatum et odio perferendis velit accusamus ipsa.
+            </p>
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? 
+            </p>
+            <!-- <img src="../../images/WebImages/thor-chris-hemsworth.jpg" alt=""> -->
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium officia nam deleniti possimus, laboriosam voluptatum eius nihil cupiditate eos ea, inventore quisquam sit deserunt at doloremque dolorum sapiente minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste molestiae quod, aut deserunt adipisci ut cum eveniet amet reprehenderit ipsam quisquam, repudiandae voluptatum et odio perferendis velit accusamus ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque repellat perspiciatis perferendis dicta odio quos, eius, nihil ipsa maiores aliquid neque optio quibusdam quasi consectetur! Ab illo veritatis dolore.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

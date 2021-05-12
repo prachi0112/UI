@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #earth_sun {
+            height: 700px;
+            width: 1510px;
+            border: 1px solid brown;
+            position: relative;
+        }
+        div .sun {
+            width: 10%;
+            position: absolute;
+            top: 250px;
+            left: 700px;
+        }
+        .sun img {
+            width: 100%;
+        }
+        div .earth {
+            width: 10%;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+        .earth img {
+            width: 70%;
+            animation: earth 10s linear 0s infinite;
+        }
+        @keyframes earth {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            /*99% {
+                transform: rotateZ(-360deg);
+                transform-origin: right 450px;
+            }*/
+            100% {
+                transform: rotateZ(-360deg);
+                transform-origin: right 450px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="earth_sun">
+        <div class="earth">
+            <img src="earth.gif" alt="">
+        </div>
+        <div class="sun">
+            <img src="sun.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

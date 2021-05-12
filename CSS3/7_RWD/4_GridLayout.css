@@ -1,0 +1,65 @@
+.row {
+    display: grid;
+}
+
+#header {
+    border: 1px solid red;
+}
+
+#header .row {
+    grid-template-columns: 10% 70% 10%;
+    align-items: center;
+    justify-content: space-around;
+    /* grid-template-areas: "logo nav login" "logo search login"; */
+    grid-template-areas: "logo nav login" "logo search search";
+    /* grid-template-areas: "logo nav login" "logo search x"; */
+}
+
+img {
+    width: 100%;
+}
+
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo {
+    grid-area: logo;
+    /* border: 1px solid black; */
+}
+
+#main-nav {
+    grid-area: nav;
+    /* border: 1px solid blue; */
+    padding: 10px;
+}
+
+#header .search {
+    grid-area: search;
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+#header .search input[type='text'] {
+    width: 80%;
+    height: 30px;
+}
+#header .search input[type='submit'] {
+    width: 18%;
+    height: 37px;
+}
+#header .login {
+    grid-area: login;
+    /* border: 1px solid orange; */
+    padding: 10px;
+}
+#header .login button {
+    display: block;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+

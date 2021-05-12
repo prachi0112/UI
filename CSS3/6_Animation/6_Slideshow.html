@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #slider {
+            height: 550px;
+            background-size: 100% 100%;
+            border: 2px solid red;
+            animation: slider 10s linear infinite;
+        }
+        @keyframes slider {
+            0%,15% {
+                background-image: url("../../images/WebImages/thor-chris-hemsworth.jpg");
+            }
+            20%,35% {
+                background-image: url("../../images/WebImages/wallpaper_14028.jpg");
+            }
+            40%,55% {
+                background-image: url("../../images/WebImages/chris_hemsworth__angry_thor.jpg");
+            }
+            60%,75% {
+                background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+            }
+            80%,95% {
+                background-image: url("../../images/WebImages/Terminator002.jpg");
+            }
+            100% {
+                background-image: url("../../images/WebImages/thor-chris-hemsworth.jpg");
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="slider"></div>
+
+</body>
+</html>

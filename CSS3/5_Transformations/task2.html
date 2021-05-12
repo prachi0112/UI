@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 710px;
+            width: 100%;
+            position: relative;
+        }
+        .bg img {
+            width:100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transform: scale(1.5, 1.5);
+            transition-duration: 8s;
+        }
+        .hulk {
+            position: absolute;
+            width: 10%;
+            top: 22px;
+            left: 45%;
+            z-index: 3;
+        }
+        .hulk img {
+            position: absolute;
+            transform: scale(0,0);
+            width: 100%;
+            transition-duration: 8s;
+        }
+        div:hover .bg img {
+            transform: scale(1, 1);   
+        }
+        div:hover .hulk img {
+            transform: scale(3.5, 3.5) translateY(80px);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <div class="bg">
+            <img src="background_image.jpg" alt="">
+        </div>
+        <div class="hulk">
+            <img src="hulk.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

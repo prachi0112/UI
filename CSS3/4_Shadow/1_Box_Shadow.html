@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent > div {
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            margin: 0px 40px;
+            border: 10px solid red;
+            overflow: hidden;
+            /* x y blur spread color */
+            box-shadow: 10px 10px 10px 0px gray,
+                        20px 20px 10px 0px rosybrown;
+        }
+        img {
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            text-shadow: 5px 5px 5px red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Box Shadow</h1>
+
+    <div id="parent">
+        <div>
+            <img src="../../sponge_images/sponge_lg_trans.png" alt="">
+        </div>
+        <div>
+            <img src="../../sponge_images/sponge_lg_trans.png" alt="">
+        </div>
+        <div>
+            <img src="../../sponge_images/sponge_lg_trans.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

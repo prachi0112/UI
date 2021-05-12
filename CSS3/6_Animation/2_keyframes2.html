@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 350px;
+            width: 1500px;
+            border: 1px solid brown;
+            overflow: hidden;
+        }
+        div img {
+            height: 50%;
+        }
+        img {
+            animation: sponge 15s linear 0s infinite;
+        }
+        @keyframes sponge {
+            0% {
+                transform: translateX(0px);
+            }
+            40% {
+                transform: translateX(1000px);
+            }
+            50% {
+                transform: translateX(1000px) rotateY(180deg);
+            }
+            90% {
+                transform: rotateY(180deg);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <img src="../../sponge_images/sponge_gif_sm_trans.gif" alt="">
+    </div>
+
+</body>
+</html>

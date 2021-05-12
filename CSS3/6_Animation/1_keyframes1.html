@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 150px;
+            width: 1500px;
+            border: 1px solid brown;
+            overflow: hidden;
+        }
+        div img {
+            height: 100%;
+        }
+        img {
+            /*animation-name: sponge;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-timing-function: steps(5);*/
+
+            /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: sponge 5s linear 0s infinite;
+            animation-direction: alternate;
+        }
+        @keyframes sponge {
+            from {
+                transform: translateX(-50px);
+            }
+            to {
+                transform: translateX(1500px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <img src="../../sponge_images/sponge_gif_sm_trans.gif" alt="">
+    </div>
+
+</body>
+</html>

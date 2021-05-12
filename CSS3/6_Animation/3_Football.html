@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            position: absolute;
+            left: 47%;
+            bottom: 0%;
+            width: 10%;
+            animation: football 5s linear infinite;
+        }
+        @keyframes football {
+            0% {
+                left: 47%;
+                bottom: 0%;
+                transform: rotate(720deg);
+            }
+            25% {
+                left: 0%;
+                bottom: 45%;
+            }
+            50% {
+                left: 47%;
+                bottom: 80%;
+            }
+            75% {
+                left: 80%;
+                bottom: 45%;
+            }
+            100% {
+                left: 47%;
+                bottom: 0%;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <img src="football.png" alt="football">
+
+</body>
+</html>
